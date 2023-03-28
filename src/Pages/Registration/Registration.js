@@ -29,40 +29,40 @@ const Registration = () => {
 
                 setTimeout(() => {
                     navigate('/complete');
-                }, 1000);
+                }, 500);
             })
     }
 
     return (
         <div className='reg-section'>
             <div className="body">
-                <section className="form-section bg-[#B3C79F] border-2">
-                    <h1 className='text-center text-2xl'>Register Here</h1>
+                <section className="form-section bg-[#ab9e9d] border-2">
+                    <h1 className='text-center text-2xl mb-8'>Register Here for Alumni</h1>
                     <div className=''>
                         <form onSubmit={handleSubmit(onSubmit)}>
 
                             <div className="form-control w-full max-w-xs">
 
-                                <input {...register("Name")} type="text" placeholder="Your Name" className="mb-4 input input-bordered w-full max-w-xs h-8" required />
+                                <input {...register("Name")} type="text" placeholder="Name" className="mb-4 input input-bordered w-full max-w-xs h-8" required />
                             </div>
 
                             <div className="form-control w-full max-w-xs">
 
-                                <input {...register("Email")} type="email" placeholder="Your Email" className="mb-4 input input-bordered w-full max-w-xs h-8" required />
+                                <input {...register("Email")} type="email" placeholder="Email" className="mb-4 input input-bordered w-full max-w-xs h-8" required />
                             </div>
 
                             <div className="form-control w-full max-w-xs">
 
-                                <input {...register("Department")} type="text" placeholder="Department Name" className="mb-4 input input-bordered w-full max-w-xs h-8" required />
+                                <input {...register("Department")} type="text" placeholder="Department " className="mb-4 input input-bordered w-full max-w-xs h-8" required />
                             </div>
 
                             <div className="form-control w-full max-w-xs">
 
-                                <input {...register("Batch")} type="number" placeholder="Batch No" className="mb-4 input input-bordered w-full max-w-xs h-8" required />
+                                <input {...register("Batch")} type="number" placeholder="Batch " className="mb-4 input input-bordered w-full max-w-xs h-8" required />
                             </div>
 
                             <div className='my-4'>
-                                <button className="btn btn-block btn-outline hover:bg-[#648D38] font-bold">
+                                <button className="btn btn-block btn-outline hover:bg-[#394230] font-bold">
                                     Register Now
                                 </button>
                             </div>
